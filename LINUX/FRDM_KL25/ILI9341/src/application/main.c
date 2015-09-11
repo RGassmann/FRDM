@@ -32,6 +32,8 @@
 #include <MKL25Z4.h>
 #include <MKL25Z4_IBG.h>
 
+#include "LCD/lcd.h"
+
 #define GREEN_LED    PIN(PB,19)
 #define BLUE_LED    PIN(PD,1)   // Blue Led is used in SPI0
 #define RED_LED    PIN(PB,18)
@@ -49,7 +51,10 @@ int main(void)
     gpio_init();    //Init GPIO's
 
 
-    spi_init();   //Init SPI0
+    //spi_init();   //Init SPI0
+
+    lcd_init();
+
 
     while (1) {
         OUTPUT_TOGGLE(GREEN_LED);
@@ -71,7 +76,7 @@ void gpio_init(void)
                     SIM_SCGC5_PORTE_MASK;
 
     INIT_OUTPUT(GREEN_LED);
-    INIT_OUTPUT(BLUE_LED);
+    //INIT_OUTPUT(BLUE_LED);
     INIT_OUTPUT(RED_LED);
 }
 
@@ -91,16 +96,17 @@ void spi_init(void)
     //SIM_SCGC5 |= SIM_SCGC5_PORTD_MASK;      //Turn on clock to D module
     SIM_SCGC4 |= SIM_SCGC4_SPI0_MASK;       //Enable SPI0 clock
 
-    PORTD_PCR0 = PORT_PCR_MUX(0x2);    //Set PTD0 to mux 2 [SPI0_PCS0]
+   // PORTD_PCR0 = PORT_PCR_MUX(0x2);    //Set PTD0 to mux 2 [SPI0_PCS0]
     PORTD_PCR1 = PORT_PCR_MUX(0x2);    //Set PTD1 to mux 2 [SPI0_SCK]
     PORTD_PCR2 = PORT_PCR_MUX(0x2);    //Set PTD2 to mux 2 [SPI0_MOSI]
-    PORTD_PCR3 = PORT_PCR_MUX(0x2);    //Set PTD3 to mux 2 [SPIO_MISO]
+    //PORTD_PCR3 = PORT_PCR_MUX(0x2);    //Set PTD3 to mux 2 [SPIO_MISO]
 
-    SPI0_C1 = SPI_C1_MSTR_MASK | SPI_C1_SSOE_MASK;   //Set SPI0 to Master & SS pin to auto SS
+    SPI0_C1 = SPI_C1_MSTR_MASK;// | SPI_C1_SSOE_MASK;   //Set SPI0 to Master & SS pin to auto SS
 
     SPI0_C2 = SPI_C2_MODFEN_MASK;   //Master SS pin acts as slave select output
 
-    SPI0_BR = (SPI_BR_SPPR(0x02) | SPI_BR_SPR(0x08));     //Set baud rate prescale divisor to 3 & set baud rate divisor to 64 for baud rate of 15625 hz
+    //SPI0_BR = (SPI_BR_SPPR(0x02) | SPI_BR_SPR(0x08));     //Set baud rate prescale divisor to 3 & set baud rate divisor to 64 for baud rate of 15625 hz
+    SPI0_BR = 0;
 
     SPI0_C1 |= SPI_C1_SPE_MASK;    //Enable SPI0
 }
