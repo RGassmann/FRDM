@@ -1,0 +1,259 @@
+# depslib dependency file v1.0
+1435255917 source:/home/roman/Dokumente/SRCs/K22USB/src/application/main.c
+	"main.h"
+	<MK22F51212.h>
+	<MK22F51212_IBG.h>
+	"USB.h"
+
+1434803499 /home/roman/Dokumente/SRCs/K22USB/src/application/main.h
+
+1434661756 /home/roman/Dokumente/SRCs/K22USB/src/startup/include/MK22F51212.h
+	<stdint.h>
+	"core_cm4.h"
+	"system_MK22F51212.h"
+
+1434661756 /home/roman/Dokumente/SRCs/K22USB/src/startup/include/cmsis/core_cm4.h
+	<stdint.h>
+	"core_cmInstr.h"
+	"core_cmFunc.h"
+	"core_cm4_simd.h"
+
+1434661754 /home/roman/Dokumente/SRCs/K22USB/src/startup/include/cmsis/core_cmInstr.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1434661754 /home/roman/Dokumente/SRCs/K22USB/src/startup/include/cmsis/core_cmFunc.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1434661754 /home/roman/Dokumente/SRCs/K22USB/src/startup/include/cmsis/core_cm4_simd.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1435254097 /home/roman/Dokumente/SRCs/K22USB/src/startup/include/system_MK22F51212.h
+	<stdint.h>
+
+1434696740 /home/roman/Dokumente/SRCs/K22USB/src/startup/include/MK22F51212_IBG.h
+
+1435255924 /home/roman/Dokumente/SRCs/K22USB/src/application/USB.h
+	"Common.h"
+
+1435255487 /home/roman/Dokumente/SRCs/K22USB/src/application/Common.h
+	<stdint.h>
+	"Configure.h"
+
+1435255893 /home/roman/Dokumente/SRCs/K22USB/src/application/Configure.h
+	"K22USB.h"
+	"../startup/include/MK22F51212.h"
+	"../startup/include/MK22F51212_IBG.h"
+
+1435254536 /home/roman/Dokumente/SRCs/K22USB/src/application/K22USB.h
+
+1443466205 source:/home/roman/Dokumente/SRCs/K22F_USB/src/application/CDC.c
+	<string.h>
+	"derivative.h"
+	"Common.h"
+	"CDC.h"
+
+1443465914 /home/roman/Dokumente/SRCs/K22F_USB/src/application/derivative.h
+	<MK22F51212.h>
+
+1434661756 /home/roman/Dokumente/SRCs/K22F_USB/src/startup/include/MK22F51212.h
+	<stdint.h>
+	"core_cm4.h"
+	"system_MK22F51212.h"
+
+1434661756 /home/roman/Dokumente/SRCs/K22F_USB/src/startup/include/cmsis/core_cm4.h
+	<stdint.h>
+	"core_cmInstr.h"
+	"core_cmFunc.h"
+	"core_cm4_simd.h"
+
+1434661754 /home/roman/Dokumente/SRCs/K22F_USB/src/startup/include/cmsis/core_cmInstr.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1434661754 /home/roman/Dokumente/SRCs/K22F_USB/src/startup/include/cmsis/core_cmFunc.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1434661754 /home/roman/Dokumente/SRCs/K22F_USB/src/startup/include/cmsis/core_cm4_simd.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1443472770 /home/roman/Dokumente/SRCs/K22F_USB/src/startup/include/system_MK22F51212.h
+	<stdint.h>
+
+1442829659 /home/roman/Dokumente/SRCs/K22F_USB/src/application/Common.h
+	<stdint.h>
+	<stdbool.h>
+	"Configure.h"
+
+1443466583 /home/roman/Dokumente/SRCs/K22F_USB/src/application/Configure.h
+	"K22USB.h"
+	"../startup/include/MK22F51212.h"
+	"../startup/include/MK22F51212_IBG.h"
+
+1435296992 /home/roman/Dokumente/SRCs/K22F_USB/src/application/K22USB.h
+
+1434696740 /home/roman/Dokumente/SRCs/K22F_USB/src/startup/include/MK22F51212_IBG.h
+
+1442829659 /home/roman/Dokumente/SRCs/K22F_USB/src/application/CDC.h
+	<stdint.h>
+
+1443474066 source:/home/roman/Dokumente/SRCs/K22F_USB/src/application/main.c
+	"main.h"
+	"USB.h"
+	"uart.h"
+	<MK22F51212.h>
+	<MK22F51212_IBG.h>
+
+1443467111 /home/roman/Dokumente/SRCs/K22F_USB/src/application/main.h
+
+1443472448 /home/roman/Dokumente/SRCs/K22F_USB/src/application/USB.h
+	"Common.h"
+
+1443468358 /home/roman/Dokumente/SRCs/K22F_USB/src/application/uart.h
+	"derivative.h"
+
+1443468472 source:/home/roman/Dokumente/SRCs/K22F_USB/src/application/uart.c
+	"derivative.h"
+	"uart.h"
+
+1434661756 source:/home/roman/Dokumente/SRCs/K22F_USB/src/startup/src/startup_MK22F51212.S
+
+1434661756 source:/home/roman/Dokumente/SRCs/K22F_USB/src/startup/src/system_MK22F51212.c
+	<stdint.h>
+	"MK22F51212.h"
+
+1443555253 source:/home/roman/Dokumente/SRCs/K22F_USB/src/application/USB.c
+	<string.h>
+	<stdio.h>
+	"derivative.h"
+	"Common.h"
+	"Configure.h"
+	"Commands.h"
+	"USBDefs.h"
+	"USB.h"
+	"icp.h"
+	"CDC.h"
+	"main.h"
+	"uart.h"
+
+1443465786 /home/roman/Dokumente/SRCs/K22F_USB/src/application/Commands.h
+	"Configure.h"
+
+1442829659 /home/roman/Dokumente/SRCs/K22F_USB/src/application/USBDefs.h
+	<stdint.h>
+
+1442829659 /home/roman/Dokumente/SRCs/K22F_USB/src/application/icp.h
+
+1443469804 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/application/CDC.c
+	<string.h>
+	"derivative.h"
+	"Common.h"
+	"CDC.h"
+
+1443469514 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/application/derivative.h
+	<MK22F51212.h>
+
+1434665356 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/startup/include/MK22F51212.h
+	<stdint.h>
+	"core_cm4.h"
+	"system_MK22F51212.h"
+
+1434665356 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/startup/include/cmsis/core_cm4.h
+	<stdint.h>
+	"core_cmInstr.h"
+	"core_cmFunc.h"
+	"core_cm4_simd.h"
+
+1434665354 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/startup/include/cmsis/core_cmInstr.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1434665354 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/startup/include/cmsis/core_cmFunc.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1434665354 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/startup/include/cmsis/core_cm4_simd.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1443476370 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/startup/include/system_MK22F51212.h
+	<stdint.h>
+
+1442833258 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/application/Common.h
+	<stdint.h>
+	<stdbool.h>
+	"Configure.h"
+
+1443596578 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/application/Configure.h
+	"K22USB.h"
+	"../startup/include/MK22F51212.h"
+	"../startup/include/MK22F51212_IBG.h"
+
+1443596402 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/application/K22USB.h
+
+1434700340 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/startup/include/MK22F51212_IBG.h
+
+1442833258 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/application/CDC.h
+	<stdint.h>
+
+1449402044 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/application/main.c
+	"main.h"
+	"USB.h"
+	"uart.h"
+	"CDC.h"
+	<MK22F51212.h>
+	<MK22F51212_IBG.h>
+
+1443470710 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/application/main.h
+
+1443476048 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/application/USB.h
+	"Common.h"
+
+1443471958 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/application/uart.h
+	"derivative.h"
+
+1443472072 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/application/uart.c
+	"derivative.h"
+	"uart.h"
+
+1443596288 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/application/USB.c
+	<string.h>
+	<stdio.h>
+	"derivative.h"
+	"Common.h"
+	"Configure.h"
+	"Commands.h"
+	"USBDefs.h"
+	"USB.h"
+	"icp.h"
+	"CDC.h"
+	"main.h"
+	"uart.h"
+
+1443469386 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/application/Commands.h
+	"Configure.h"
+
+1442833258 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/application/USBDefs.h
+	<stdint.h>
+
+1442833258 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/application/icp.h
+
+1434665356 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/startup/src/startup_MK22F51212.S
+
+1434665356 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/USB/src/startup/src/system_MK22F51212.c
+	<stdint.h>
+	"MK22F51212.h"
+
