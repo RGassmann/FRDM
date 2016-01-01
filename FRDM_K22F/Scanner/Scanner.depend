@@ -1,0 +1,135 @@
+# depslib dependency file v1.0
+1442345028 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341/src/application/LCD/fonts.c
+	"fonts.h"
+
+1442009016 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341/src/application/LCD/fonts.h
+	<stdint.h>
+
+1449319977 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341/src/application/LCD/lcd_advanced.c
+	"lcd.h"
+
+1445540842 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341/src/application/LCD/lcd.h
+	<MK22F51212.h>
+	<MK22F51212_IBG.h>
+	"lcd_basic.h"
+	"lcd_advanced.h"
+
+1434665356 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341/src/startup/include/MK22F51212.h
+	<stdint.h>
+	"core_cm4.h"
+	"system_MK22F51212.h"
+
+1434665356 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341/src/startup/include/cmsis/core_cm4.h
+	<stdint.h>
+	"core_cmInstr.h"
+	"core_cmFunc.h"
+	"core_cm4_simd.h"
+
+1434665354 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341/src/startup/include/cmsis/core_cmInstr.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1434665354 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341/src/startup/include/cmsis/core_cmFunc.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1434665354 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341/src/startup/include/cmsis/core_cm4_simd.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1434807054 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341/src/startup/include/system_MK22F51212.h
+	<stdint.h>
+
+1434700340 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341/src/startup/include/MK22F51212_IBG.h
+
+1449320300 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341/src/application/LCD/lcd_basic.h
+	"lcd.h"
+
+1442344864 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341/src/application/LCD/lcd_advanced.h
+	"lcd_basic.h"
+	"fonts.h"
+
+1449320319 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341/src/application/LCD/lcd_basic.c
+	"lcd_basic.h"
+	<MK22F51212_IBG.h>
+
+1434665356 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341/src/startup/src/startup_MK22F51212.S
+
+1434665356 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341/src/startup/src/system_MK22F51212.c
+	<stdint.h>
+	"MK22F51212.h"
+
+1449320022 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341/src/application/main.c
+	"main.h"
+	<MK22F51212.h>
+	<MK22F51212_IBG.h>
+	"LCD/lcd.h"
+
+1434807098 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341/src/application/main.h
+
+1442345028 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341 QuadEnc/src/application/LCD/fonts.c
+	"fonts.h"
+
+1442009016 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341 QuadEnc/src/application/LCD/fonts.h
+	<stdint.h>
+
+1449319977 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341 QuadEnc/src/application/LCD/lcd_advanced.c
+	"lcd.h"
+
+1445540842 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341 QuadEnc/src/application/LCD/lcd.h
+	<MK22F51212.h>
+	<MK22F51212_IBG.h>
+	"lcd_basic.h"
+	"lcd_advanced.h"
+
+1434665356 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341 QuadEnc/src/startup/include/MK22F51212.h
+	<stdint.h>
+	"core_cm4.h"
+	"system_MK22F51212.h"
+
+1434665356 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341 QuadEnc/src/startup/include/cmsis/core_cm4.h
+	<stdint.h>
+	"core_cmInstr.h"
+	"core_cmFunc.h"
+	"core_cm4_simd.h"
+
+1434665354 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341 QuadEnc/src/startup/include/cmsis/core_cmInstr.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1434665354 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341 QuadEnc/src/startup/include/cmsis/core_cmFunc.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1434665354 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341 QuadEnc/src/startup/include/cmsis/core_cm4_simd.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1449320420 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341 QuadEnc/src/startup/include/system_MK22F51212.h
+	<stdint.h>
+
+1434700340 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341 QuadEnc/src/startup/include/MK22F51212_IBG.h
+
+1449320300 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341 QuadEnc/src/application/LCD/lcd_basic.h
+	"lcd.h"
+
+1442344864 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341 QuadEnc/src/application/LCD/lcd_advanced.h
+	"lcd_basic.h"
+	"fonts.h"
+
+1449320319 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341 QuadEnc/src/application/LCD/lcd_basic.c
+	"lcd_basic.h"
+	<MK22F51212_IBG.h>
+
+1434665356 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341 QuadEnc/src/startup/src/startup_MK22F51212.S
+
+1434665356 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_K22F/ILI9341 QuadEnc/src/startup/src/system_MK22F51212.c
+	<stdint.h>
+	"MK22F51212.h"
+

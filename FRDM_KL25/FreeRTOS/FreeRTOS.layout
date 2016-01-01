@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="src/startup/src/startup_MKL25Z4.S" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8354" topLine="181" />
+		</Cursor>
+	</File>
+	<File name="src/application/FreeRTOSConfig.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5511" topLine="45" />
+		</Cursor>
+	</File>
+	<File name="src/application/Freescale_Code/drivers/uart/uart.c" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="165" />
+		</Cursor>
+	</File>
+	<File name="src/application/FreeRTOS/Source/portable/GCC/ARM_CM0/portmacro.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="958" topLine="81" />
+		</Cursor>
+	</File>
+	<File name="src/application/FreeRTOS/Source/croutine.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7715" topLine="134" />
+		</Cursor>
+	</File>
+	<File name="src/application/FreeRTOS/Source/include/mpu_wrappers.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6990" topLine="139" />
+		</Cursor>
+	</File>
+	<File name="src/application/Freescale_Code/cpu/sysinit.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="389" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/application/FreeRTOS/Source/include/FreeRTOS.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="18181" topLine="520" />
+		</Cursor>
+	</File>
+	<File name="src/application/FreeRTOS/Source/portable/MemMang/heap_2.c" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="958" topLine="255" />
+		</Cursor>
+	</File>
+	<File name="src/application/FreeRTOS/Source/include/StackMacros.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9431" topLine="136" />
+		</Cursor>
+	</File>
+	<File name="src/application/FreeRTOS/Source/tasks.c" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="83120" topLine="2397" />
+		</Cursor>
+	</File>
+	<File name="src/application/main_blinky.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6540" topLine="174" />
+		</Cursor>
+	</File>
+	<File name="src/application/freedom.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="313" topLine="49" />
+		</Cursor>
+	</File>
+	<File name="src/startup/load/MKL25Z128xxx4_flash.ld" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="799" topLine="189" />
+		</Cursor>
+	</File>
+	<File name="src/application/Freescale_Code/drivers/mcg/mcg.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="71" />
+		</Cursor>
+	</File>
+	<File name="src/application/Freescale_Code/cpu/sysinit.c" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="552" topLine="18" />
+		</Cursor>
+	</File>
+	<File name="src/application/FreeRTOS/Source/include/portable.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5390" topLine="156" />
+		</Cursor>
+	</File>
+	<File name="src/application/Freescale_Code/drivers/uart/uart.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="4" />
+		</Cursor>
+	</File>
+	<File name="src/application/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6091" topLine="121" />
+		</Cursor>
+	</File>
+	<File name="src/application/FreeRTOS/Source/include/task.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="11569" topLine="254" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

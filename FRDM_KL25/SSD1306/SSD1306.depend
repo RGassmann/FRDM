@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1443729253 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/SSD1306/src/application/i2c.c
+	"i2c.h"
+	<MKL25Z4.h>
+	<MKL25Z4_IBG.h>
+
+1443729272 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/SSD1306/src/application/i2c.h
+
+1437158907 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/SSD1306/src/startup/include/MKL25Z4.h
+	<stdint.h>
+	"core_cm0plus.h"
+	"system_MKL25Z4.h"
+
+1437158907 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/SSD1306/src/startup/include/cmsis/core_cm0plus.h
+	<stdint.h>
+	<core_cmInstr.h>
+	<core_cmFunc.h>
+
+1437158907 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/SSD1306/src/startup/include/cmsis/core_cmInstr.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1437158907 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/SSD1306/src/startup/include/cmsis/core_cmFunc.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1443698437 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/SSD1306/src/startup/include/system_MKL25Z4.h
+	<stdint.h>
+
+1437158907 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/SSD1306/src/startup/include/MKL25Z4_IBG.h
+

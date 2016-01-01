@@ -1,0 +1,65 @@
+# depslib dependency file v1.0
+1442341428 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/ILI9341/src/application/LCD/fonts.c
+	"fonts.h"
+
+1442005417 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/ILI9341/src/application/LCD/fonts.h
+	<stdint.h>
+
+1442338521 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/ILI9341/src/application/LCD/lcd_basic.c
+	"lcd_basic.h"
+
+1442005417 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/ILI9341/src/application/LCD/lcd_basic.h
+	"lcd.h"
+
+1442005417 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/ILI9341/src/application/LCD/lcd.h
+	<MKL25Z4.h>
+	<MKL25Z4_IBG.h>
+	"lcd_basic.h"
+	"lcd_advanced.h"
+
+1442005417 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/ILI9341/src/startup/include/MKL25Z4.h
+	<stdint.h>
+	"core_cm0plus.h"
+	"system_MKL25Z4.h"
+
+1442005417 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/ILI9341/src/startup/include/cmsis/core_cm0plus.h
+	<stdint.h>
+	<core_cmInstr.h>
+	<core_cmFunc.h>
+
+1442005417 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/ILI9341/src/startup/include/cmsis/core_cmInstr.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1442005417 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/ILI9341/src/startup/include/cmsis/core_cmFunc.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1442005417 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/ILI9341/src/startup/include/system_MKL25Z4.h
+	<stdint.h>
+
+1442005417 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/ILI9341/src/startup/include/MKL25Z4_IBG.h
+
+1442341264 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/ILI9341/src/application/LCD/lcd_advanced.h
+	"lcd_basic.h"
+	"fonts.h"
+
+1442342276 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/ILI9341/src/application/main.c
+	"main.h"
+	<MKL25Z4.h>
+	<MKL25Z4_IBG.h>
+	"LCD/lcd.h"
+
+1442005417 /home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/ILI9341/src/application/main.h
+
+1442005417 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/ILI9341/src/startup/src/startup_MKL25Z4.S
+
+1442005417 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/ILI9341/src/startup/src/system_MKL25Z4.c
+	<stdint.h>
+	"MKL25Z4.h"
+
+1442341555 source:/home/roman/Dokumente/GitHub/FRDM/LINUX/FRDM_KL25/ILI9341/src/application/LCD/lcd_advanced.c
+	"lcd.h"
+
