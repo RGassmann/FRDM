@@ -117,7 +117,7 @@
 				<ExtraCommands>
 					<Add after="arm-none-eabi-size build/bin/$(TARGET_NAME)/$(PROJECT_NAME).elf" />
 					<Add after="arm-none-eabi-objcopy -O srec build/bin/$(TARGET_NAME)/$(PROJECT_NAME).elf  build/bin/$(TARGET_NAME)/$(PROJECT_NAME).srec" />
-					<Add after="src\startup\load\USBDM_ARM_FLASH.bat build/bin/$(TARGET_NAME)/$(PROJECT_NAME).srec MKL25Z128M4" />
+					<Add after="src\startup\load\USBDM_ARM_FLASH.bat arm MKL25Z128M4 build/bin/$(TARGET_NAME)/$(PROJECT_NAME).srec" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>
@@ -161,13 +161,10 @@
 			<code_completion />
 			<envvars />
 			<debugger>
-				<remote_debugging target="Release">
+				<remote_debugging>
 					<options conn_type="0" serial_baud="115200" ip_address="localhost" ip_port="1234" additional_shell_cmds_before="target remote localhost:1234" />
 				</remote_debugging>
 				<remote_debugging target="Compile">
-					<options conn_type="0" serial_baud="115200" ip_address="localhost" ip_port="1234" additional_shell_cmds_before="target remote localhost:1234" />
-				</remote_debugging>
-				<remote_debugging target="Debug">
 					<options conn_type="0" serial_baud="115200" ip_address="localhost" ip_port="1234" additional_shell_cmds_before="target remote localhost:1234" />
 				</remote_debugging>
 			</debugger>
