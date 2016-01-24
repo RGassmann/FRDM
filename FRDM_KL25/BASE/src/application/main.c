@@ -32,9 +32,9 @@
 #include <MKL25Z4.h>
 #include <MKL25Z4_IBG.h>
 
-#define GREEN_LED    PIN_INV(PB,19)
-#define BLUE_LED    PIN_INV(PD,1)
-#define RED_LED    PIN_INV(PB,18)
+#define LED_GREEN   PIN_INV(PB,19)
+#define LED_BLUE    PIN_INV(PD,1)
+#define LED_RED     PIN_INV(PB,18)
 
 void gpio_init(void);
 
@@ -43,13 +43,8 @@ int main(void)
     gpio_init();
 
     while (1) {
-        //OUTPUT_TOGGLE(GREEN_LED);
+        OUTPUT_TOGGLE(LED_GREEN);
         delay();
-        /*OUTPUT_TOGGLE(RED_LED);
-        delay();
-        OUTPUT_TOGGLE(BLUE_LED);
-        delay();*/
-
     }
 }
 
@@ -61,14 +56,13 @@ void gpio_init(void)
                     SIM_SCGC5_PORTD_MASK |
                     SIM_SCGC5_PORTE_MASK;
 
-    PORTB->PCR[19] = PORT_PCR_MUX(1);
-//    PORTB_BASE->DDR = 1 << 19;
-  //  PORTB->DSR = 1 << 19;
-    //INIT_OUTPUT(GREEN_LED);
-    INIT_OUTPUT(BLUE_LED);
-    INIT_OUTPUT(RED_LED);
-    OUTPUT_SET(RED_LED,POSITION_OFF);
-    OUTPUT_SET(BLUE_LED,POSITION_OFF);
+    INIT_OUTPUT(LED_GREEN);
+    INIT_OUTPUT(LED_BLUE);
+    INIT_OUTPUT(LED_RED);
+
+    OUTPUT_SET(LED_RED,POSITION_OFF);
+    OUTPUT_SET(LED_BLUE,POSITION_OFF);
+    OUTPUT_SET(LED_GREEN,POSITION_OFF);
 }
 
 void delay(void)
