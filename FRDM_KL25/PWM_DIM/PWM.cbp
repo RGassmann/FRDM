@@ -92,7 +92,7 @@
 				<ExtraCommands>
 					<Add after="arm-none-eabi-size build/bin/$(TARGET_NAME)/$(PROJECT_NAME).elf" />
 					<Add after="arm-none-eabi-objcopy -O srec build/bin/$(TARGET_NAME)/$(PROJECT_NAME).elf  build/bin/$(TARGET_NAME)/$(PROJECT_NAME).srec" />
-					<Add after="src\startup\load\USBDM_ARM_FLASH.bat build/bin/$(TARGET_NAME)/$(PROJECT_NAME).srec MKL25Z128M4" />
+					<Add after="UsbdmFlashProgrammer -target=arm -device=MKL25Z128M4 -erase=All -program build/bin/$(TARGET_NAME)/$(PROJECT_NAME).srec -execute" />
 					<Mode after="always" />
 				</ExtraCommands>
 			</Target>

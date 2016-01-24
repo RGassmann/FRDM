@@ -34,6 +34,9 @@
 
 #include "LCD/lcd.h"
 
+#define MIN(a,b) (((a)<(b))?(a):(b))
+#define MAX(a,b) (((a)>(b))?(a):(b))
+
 #define GREEN_LED   PIN_INV(PA,2)
 #define RED_LED     PIN_INV(PA,1)
 #define BLUE_LED    PIN_INV(PD,5)
@@ -43,12 +46,15 @@
 #define END_Back    PIN(PD,6)
 #define SW_2        PIN_INV(PC,1)
 #define SW_1        PIN_INV(PB,17)
+#define NEAR_END    PIN_INV(PE,1)
 
 #define MAX_PWM     65535
+
+#define MM_STEP     1645
  typedef enum {stop, error, forwards, backwards} Rstate;
     struct {
-        uint32 current;
-        uint32 desired;
+        int32 current;
+        int32 desired;
         Rstate state;
         Rstate state_old;
         uint8 speed;
@@ -117,7 +123,17 @@ FTM1_CNT = 0x00;
 FTM0->CONTROLS[2].CnV = (MAX_PWM*5)/10;
 
     OUTPUT_SET(DIRECTION, POSITION_OFF);
-    while ( INPUT_GET(END_Front) ) OUTPUT_SET(BLUE_LED, POSITION_ON); //Wait for endpos
+    while ( INPUT_GET(END_Front) ){
+        if ( INPUT_GET(NEAR_END) ) {
+            OUTPUT_SET(RED_LED,POSITION_OFF);
+            FTM0->CONTROLS[2].CnV = (MAX_PWM*10)/10;
+        } else {
+            OUTPUT_SET(RED_LED,POSITION_ON);
+            FTM0->CONTROLS[2].CnV = (MAX_PWM*4)/10;
+        }
+
+        OUTPUT_SET(BLUE_LED, POSITION_ON); //Wait for endpos
+    };
     FTM0->CONTROLS[2].CnV = 0;
     OUTPUT_SET(DIRECTION, POSITION_ON);
     delay();
@@ -132,19 +148,24 @@ FTM0->CONTROLS[2].CnV = (MAX_PWM*5)/10;
     FTM1_CNT = 0x00;
     OFCnt = 0;
 //    pos = 0;
-    ReaderPos.current = 100;
-    ReaderPos.desired = 100;
+    ReaderPos.current = 0;
+    ReaderPos.desired = 0;
     ReaderPos.state = stop;
     ReaderPos.state_old = error;
-
-
-
-
+    INIT_OUTPUT(RED_LED);
     while (1) {
 
 
+
+        if ( INPUT_GET(NEAR_END) ) {
+            OUTPUT_SET(RED_LED,POSITION_OFF);
+        } else {
+            OUTPUT_SET(RED_LED,POSITION_ON);
+        }
+
+
         if ( INPUT_GET(SW_1) ) {
-            ReaderPos.desired = 164500+100;
+            ReaderPos.desired = 120*MM_STEP+100;;//164500*3+100;//164500+100;
         }
 
         if ( !INPUT_GET(END_Front) ){
@@ -161,7 +182,7 @@ FTM0->CONTROLS[2].CnV = (MAX_PWM*5)/10;
                 OFCnt--;
             FTM1_SC &=~FTM_SC_TOF_MASK;
         }
-        ReaderPos.current = OFCnt * 0xFFFF + cnt + 100;
+        ReaderPos.current = OFCnt * 0xFFFF + cnt;
 
 
 
@@ -204,13 +225,14 @@ FTM0->CONTROLS[2].CnV = (MAX_PWM*5)/10;
             case forwards://if (ReaderPos.state != ReaderPos.state_old){
             //lcd_write_string(10, 90, "Forwards");
             //}
+            OUTPUT_SET(RED_LED, POSITION_ON);
                 OUTPUT_SET(DIRECTION, POSITION_ON);
                 uint32 diff = ReaderPos.desired - ReaderPos.current;
 
-                if ( diff < 5 || ReaderPos.desired < ReaderPos.current) {
+                if ( diff < 3 || ReaderPos.desired < ReaderPos.current) {
                     ReaderPos.state = stop;
                 } else {
-                FTM0->CONTROLS[2].CnV =((MAX_PWM)*(diff/100)/76)%MAX_PWM;
+                    FTM0->CONTROLS[2].CnV =MIN((((MAX_PWM)*MIN(diff,20000)/20000))+1000,MAX_PWM);
                 }
 
                 /*else if ( diff < 100 ){FTM0->CONTROLS[2].CnV = (MAX_PWM*1)/100;}
@@ -290,6 +312,7 @@ void gpio_init(void)
     INIT_INPUT_PULLUP(END_Back);
     INIT_INPUT(SW_1);
     INIT_INPUT(SW_2);
+    INIT_INPUT(NEAR_END);
 
 
     OUTPUT_SET(GREEN_LED, POSITION_OFF);
