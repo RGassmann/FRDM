@@ -50,8 +50,8 @@ int main(void)
 
     while (1) {
         OUTPUT_TOGGLE(BLUE_LED);
-        ssd1306_writeString(8,1,"Tabea Mendez");
-        ssd1306_writeString(9,2,"Tabea Mendez");
+        ssd1306_writeString(8,1,"Test");
+        ssd1306_writeString(9,2,"Test");
         delay();
     }
 }

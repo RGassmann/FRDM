@@ -57,9 +57,9 @@ int main(void)
         //invertDisplay(0);
         OUTPUT_TOGGLE(BLUE_LED);
         delay();*/
-        //ssd1306_writeString(i++,0," Roman Gassmann");
+        //ssd1306_writeString(i++,0," Test");
 
-        ssd1306_writeString(i*8,i,"Tabea Mendez");
+        ssd1306_writeString(i*8,i,"Test");
 i++;
         if ( i >= 8) i=0;
         //display();
