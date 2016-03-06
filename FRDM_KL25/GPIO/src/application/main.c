@@ -43,14 +43,24 @@ int main(void)
     gpio_init();
 
     while (1) {
-        /* GPIO Pin Toggeln (Ein falls Aus, Aus falls Ein)
+        /* LED Pin Toggeln (Ein falls Aus, Aus falls Ein)
          * gemäss RM 41.2.4 Port Toggle Output Register */
         GPIOB->PTOR |= 1 << 18;
         delay(); // Quick and Dirty Verzögerungsschleife
         GPIOB->PTOR |= 1 << 19;
         delay(); // Quick and Dirty Verzögerungsschleife
-        GPIOD->PTOR |= 1 << 1;
-        delay(); // Quick and Dirty Verzögerungsschleife
+
+        /* SW Pin abfragen (Falls ein -> Blue led ein sonst aus
+         * gemäss RM 41.2.5 Port Data Input Register*/
+        if (GPIOB->PDIR & (1<<8)){
+            /* Blue LED Pin ausschalten (LOW) => Led leuchtet
+             * gemäss RM 41.2.3 Port Clear Output Register */
+            GPIOD->PCOR |= 1 << 1;
+        } else {
+            /* Blue LED Pin einschalten (HI) => Led leuchtet nicht
+             * gemäss RM 41.2.2 Port Set Output Register */
+            GPIOD->PSOR |= 1 << 1;
+        }
     }
 }
 
@@ -69,17 +79,25 @@ void gpio_init(void)
     PORTB->PCR[19] = PORT_PCR_MUX(1); //Green
     PORTD->PCR[1]  = PORT_PCR_MUX(1); //Blue
 
-    /* GPIO Pins als Outputs definieren
+    PORTB->PCR[8]  = PORT_PCR_MUX(1); //SW
+
+    /* LED Pins als Outputs definieren
      * gemäss RM 41.2.6 Port Data Direction Register */
     GPIOB->PDDR |= 1 << 18;
     GPIOB->PDDR |= 1 << 19;
     GPIOD->PDDR |= 1 << 1;
 
-    /* GPIO Pins einschalten (HI) => Led leuchten nicht
+    /* SW Pin als Input definieren
+     * gemäss RM 41.2.6 Port Data Direction Register */
+    GPIOB->PDDR &= ~(1<<8);
+
+    /* LED Pins einschalten (HI) => Led leuchten nicht
      * gemäss RM 41.2.2 Port Set Output Register */
     GPIOB->PSOR |= 1 << 18;
     GPIOB->PSOR |= 1 << 19;
     GPIOD->PSOR |= 1 << 1;
+
+
 }
 
 void delay(void)
